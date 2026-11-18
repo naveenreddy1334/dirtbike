@@ -1,0 +1,19 @@
+{
+  "name": "game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build.mjs",
+    "start": "node -e \"require('child_process').execSync('python -m http.server 8080 --directory dist',{stdio:'inherit'})\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@dgreenheck/ez-tree": "^1.1.0",
+    "esbuild": "^0.28.2",
+    "three": "^0.187.0"
+  },
+  "type": "module"
+}
